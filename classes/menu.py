@@ -108,21 +108,17 @@ class MenuPrincipal(tk.Frame):
         self.juego_frame.pack()
         titulo_label = tk.Label(self.juego_frame, text="Configuración", font=("Helvetica", 20))
         titulo_label.pack(pady=50)
-        # Frame para la selección de icono de bomba
         frame_bomba = tk.LabelFrame(self.juego_frame, text="Seleccionar icono de la bomba:")
         frame_bomba.pack(pady=10)
 
-        # Botones de opciones de icono de bomba
         for opcion in ["※", "☢︎", "☠︎","⊗︎"]:
             boton_opcion = tk.Button(frame_bomba, text=opcion, width=4, height=2,
                                      command=lambda o=opcion: self.seleccionar_icono_bomba(o))
             boton_opcion.pack(side=tk.LEFT, padx=5)
 
-        # Frame para la selección de icono de sospecha
         frame_sospecha = tk.LabelFrame(self.juego_frame, text="Seleccionar icono de la sospecha:")
         frame_sospecha.pack(pady=10)
 
-        # Botones de opciones de icono de sospecha
         for opcion in ["✖︎", "♣︎", "❀︎","♛︎"]:
             boton_opcion = tk.Button(frame_sospecha, text=opcion, width=4, height=2,
                                      command=lambda o=opcion: self.seleccionar_icono_sospecha(o))

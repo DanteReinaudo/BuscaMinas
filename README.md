@@ -5,6 +5,12 @@ Este es un juego de Buscaminas implementado en Python, con dos versiones disponi
 ## Instalación
 
 No es necesario instalar ninguna biblioteca adicional para ejecutar el juego.
+Puedes clonar el repositorio de la siguiente manera: 
+
+```bash
+git clone git@github.com:DanteReinaudo/BuscaMinas.git
+```
+
 
 ## Ejecución
 

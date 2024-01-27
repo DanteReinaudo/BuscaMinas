@@ -1,7 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox, simpledialog
-from menu import MenuPrincipal
-from buscaminas import Buscaminas
+from classes.menu import MenuPrincipal
     
 if __name__ == "__main__":
     root = tk.Tk()

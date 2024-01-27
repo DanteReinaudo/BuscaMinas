@@ -1,4 +1,3 @@
-#Trabajo Practico Nro 1, Dante Reinaudo, 102848
 from random import randint
 import time
 
@@ -231,6 +230,9 @@ def Menu():
                         Top3.pop(0)
                     Top3.reverse()
                     #Siempre que use un for me tiro un error 
+                    for top in Top3:
+                        print(top)
+                    """   
                     if len(Top3)==1:
                         print(Top3)
                     elif len(Top3)==2:
@@ -240,6 +242,7 @@ def Menu():
                         print(Top3[0])
                         print(Top3[1])
                         print(Top3[2])
+                    """
             if opcionscore=="B":
                 print("Historial de ultimas 10 partidas".center(125,"~"))
                 while len(historial)>10:
